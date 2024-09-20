@@ -19,8 +19,8 @@ document.getElementById('btn-trans-cash-out').addEventListener('click', function
     const newTransaction = document.createElement('div');
     newTransaction.innerHTML = `
         <h1 class="text-lg font-bold">Bank Withdraw</h1>
-        <p class="text-sm">Amount: ${amountDeduct}</p>
-        <p class="text-sm">New Balance: ${availableBalance}</p>
+        <p class="text-xs text-[#080808]/[0.5]">Amount: ${amountDeduct}</p>
+        <p class="text-xs text-[#080808]/[0.5]">New Balance: ${availableBalance}</p>
     `
     document.getElementById('transactions').appendChild(newTransaction);
 })

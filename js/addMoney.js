@@ -19,8 +19,8 @@ document.getElementById('btn-trans-add-money').addEventListener('click', functio
     const newTransaction = document.createElement('div');
     newTransaction.innerHTML = `
         <h1 class="text-lg font-bold">Bank Deposit</h1>
-        <p class="text-sm">Amount: ${amountAdd}</p>
-        <p class="text-sm">New Balance: ${availableBalance}</p>
+        <p class="text-xs text-[#080808]/[0.5]">Amount: ${amountAdd}</p>
+        <p class="text-xs text-[#080808]/[0.5]">New Balance: ${availableBalance}</p>
     `
     document.getElementById('transactions').appendChild(newTransaction);
 })
