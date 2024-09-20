@@ -7,7 +7,7 @@ document.getElementById('btn-trans-add-money').addEventListener('click', functio
     console.log(availableBalance);
     const pinNumber = getInputFieldValueById('trans-add-pin');
 
-    if (String(pinNumber) === 'Muhit@420') {
+    if (String(pinNumber) === '0903') {
         availableBalance = availableBalance + amountAdd;
         alert('Transaction successful! Added the amount ' + amountAdd);
     } else {
