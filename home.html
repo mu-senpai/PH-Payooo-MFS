@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Payooo Home</title>
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo justify-start pt-14 pb-10 phone-6 overflow-auto">
+
+                <!-- Nav items -->
+                <div class="w-[90%] flex justify-between items-center">
+                    <div class="flex items-center gap-2 w-full">
+                        <figure class="w-12 h-12">
+                            <img class="w-full h-full object-contain" src="Payoo-MFS-Resources/payoo.png" alt="">
+                        </figure>
+                        <div class="flex flex-col">
+                          <h3 id="available-balance" class="text-lg font-extrabold">89400</h3>
+                          <div class="text-xs font-normal text-[#080808]/[0.5]">Available Balance</div>
+                        </div>
+                    </div>
+                    <!-- Logout button -->
+                    <div>
+                        <button id="btn-log-out" class="btn btn-sm btn-outline w-24 border border-[#080808]/[0.1] text-[#080808]/[0.5]">Log Out</button>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="w-[96%] mx-auto mb-6">
+                    <h1 class="text-2xl font-bold text-left mb-2">🔥 Welcome to Payooo!</h1>
+                    <p class="text-[#080808]/[0.5] text-xs/5">Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
+                </div>
+
+                <!-- Toggle Buttons -->
+                <div class="w-full flex justify-around">
+                    <button id="btn-add-money" class="btn p-0 w-24 text-sm font-bold">Add Money</button>
+                    <button id="btn-cash-out" class="btn p-0 w-24 text-sm font-bold">Cash Out</button>
+                    <button id="btn-transactions" class="btn p-0 w-24 text-sm font-bold">Transactions</button>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Add Money Form -->
+                <div id="add-money-form" class="card bg-base-100 w-[95%] mx-auto rounded-3xl">
+                    <form class="card-body">
+
+                      <div class="form-control">
+                          <label class="label">
+                            <h4 class="text-sm text-left font-medium text-[#080808]">Select A Bank</h4>
+                          </label>
+                          <select class="select w-full max-w-xs text-sm text-[#080808]/[0.4] bg-[#F4F5F7] rounded-[2rem]">
+                            <option disabled selected>Select back</option>
+                            <option>IFIC</option>
+                            <option>SBI</option>
+                            <option>Indian Bank</option>
+                            <option>Canara Bank</option>
+                            <option>HDFC</option>
+                          </select>
+                      </div> 
+
+                      <div class="form-control">
+                        <label class="label">
+                            <h4 class="text-sm text-left font-medium text-[#080808]">Bank Account Number</h4>
+                          </label>
+                          <input id="account-no" type="number" placeholder="Enter 11 digit account number" class="input w-full max-w-xs text-sm bg-[#F4F5F7] rounded-[2rem]" />
+                      </div>
+
+                      <div class="form-control">
+                        <label class="label">
+                            <h4 class="text-sm text-left font-medium text-[#080808]">Amount to Deposit</h4>
+                          </label>
+                          <input id="add-amount" type="number" placeholder="Add amount to deposit" class="input w-full max-w-xs text-sm bg-[#F4F5F7] rounded-[2rem]" />
+                      </div>
+
+                      <div class="form-control">
+                        <label class="label">
+                            <h4 class="text-sm text-left font-medium text-[#080808]">Pin Number</h4>
+                          </label>
+                          <input id="trans-add-pin" type="password" placeholder="Enter 4 digit pin number" class="input w-full max-w-xs text-sm bg-[#F4F5F7] rounded-[2rem]" autocomplete="off" />
+                      </div>
+
+                      <div class="form-control justify-center mt-4">
+                        <button id="btn-trans-add-money" class="btn btn-primary w-full font-semibold text-lg rounded-[2rem]">Add Money</button>
+                      </div>
+
+                    </form>
+                </div>
+
+                <!-- Cash Out Form -->
+                <div id="cash-out-form" class="hidden card bg-base-100 w-[95%] mx-auto rounded-3xl">
+                    <form class="card-body">
+
+                      <div class="form-control">
+                          <label class="label">
+                            <h4 class="text-sm text-left font-medium text-[#080808]">Select A Bank</h4>
+                          </label>
+                          <select class="select w-full max-w-xs text-sm text-[#080808]/[0.4] bg-[#F4F5F7] rounded-[2rem]">
+                            <option disabled selected>Select back</option>
+                            <option>IFIC</option>
+                            <option>SBI</option>
+                            <option>Indian Bank</option>
+                            <option>Canara Bank</option>
+                            <option>HDFC</option>
+                          </select>
+                      </div> 
+
+                      <div class="form-control">
+                        <label class="label">
+                            <h4 class="text-sm text-left font-medium text-[#080808]">Bank Account Number</h4>
+                          </label>
+                          <input id="account-no" type="number" placeholder="Enter 11 digit account number" class="input w-full max-w-xs text-sm bg-[#F4F5F7] rounded-[2rem]" />
+                      </div>
+
+                      <div class="form-control">
+                        <label class="label">
+                            <h4 class="text-sm text-left font-medium text-[#080808]">Amount to Withdraw</h4>
+                          </label>
+                          <input id="add-deduct" type="number" placeholder="Add amount to withdraw" class="input w-full max-w-xs text-sm bg-[#F4F5F7] rounded-[2rem]" />
+                      </div>
+
+                      <div class="form-control">
+                        <label class="label">
+                            <h4 class="text-sm text-left font-medium text-[#080808]">Pin Number</h4>
+                          </label>
+                          <input id="trans-out-pin" type="password" placeholder="Enter 4 digit pin number" class="input w-full max-w-xs text-sm bg-[#F4F5F7] rounded-[2rem]" autocomplete="off" />
+                      </div>
+
+                      <div class="form-control justify-center mt-4">
+                        <button id="btn-trans-cash-out" class="btn btn-primary w-full font-semibold text-lg rounded-[2rem]">Cash Out</button>
+                      </div>
+
+                    </form>
+            
+                </div>
+
+                <!-- Transaction section -->
+                <div id="transactions" class="hidden card bg-base-100 w-[95%] p-5 mx-auto space-y-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- External JS files -->
+        <script src="js/utilities.js"></script>
+        <script src="js/toggle.js"></script>
+        <script src="js/logout.js"></script>
+        <script src="js/addMoney.js"></script>
+        <script src="js/cashOut.js"></script>
+    </main>
+</body>
+</html>

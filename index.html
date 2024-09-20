@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Payooo MFS</title>
+</head>
+<body>
+
+    <!-- Login Page -->
+    <main class="flex justify-center">
+        <!-- Mockup Phone -->
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <!-- Main content -->
+                <div class="artboard artboard-demo phone-5">
+                    <!-- Logo -->
+                    <div class="w-16 h-16 inline-flex justify-center mb-4">
+                        <img class="w-full h-full" src="Payoo-MFS-Resources/payoo.png" alt="">
+                    </div>
+                    <!-- Login Card -->
+                    <div class="card bg-base-100 w-[90%] mx-auto rounded-3xl">
+                        <form class="card-body">
+
+                          <!-- Mobile Number Input -->
+                          <div class="form-control">
+                              <label class="label">
+                                <h4 class="text-sm text-left font-medium text-[#080808]">Mobile Number</h4>
+                              </label>
+                              <input id="login-phone" type="number" placeholder="Enter your number" class="input w-full max-w-xs text-sm bg-[#F4F5F7] rounded-[2rem] " />
+                          </div> 
+
+                          <!-- Pin Number Input -->
+                          <div class="form-control">
+                            <label class="label">
+                                <h4 class="text-sm text-left font-medium text-[#080808]">4 Digit Pin</h4>
+                              </label>
+                              <input id="login-pin" type="password" placeholder="Enter 4 Digit Pin" class="input w-full max-w-xs text-sm bg-[#F4F5F7] rounded-[2rem]" />
+                          </div>
+
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+
+                          <!-- Login Button -->
+                          <div class="form-control justify-center mt-2">
+                            <button id="btn-login" class="btn btn-primary w-full font-semibold text-lg rounded-[2rem]">Login</button>
+                          </div>
+
+                        </form>
+                      </div>
+                </div>
+            </div>
+          </div>
+    </main>
+
+    <!-- External JS file -->
+    <script src="js/utilities.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+</html>
