@@ -9,7 +9,7 @@ document.getElementById('btn-trans-cash-out').addEventListener('click', function
 
     if (String(pinNumber) === '0903') {
         availableBalance = availableBalance - amountDeduct;
-        alert('Transaction successful! Deducted the amount ' + amountDeduct);
+        alert('Transaction successful! Withdrawed the amount ' + amountDeduct);
     } else {
         alert('Pin invalid. Transaction unsuccessful!');
     }

@@ -9,7 +9,7 @@ document.getElementById('btn-trans-add-money').addEventListener('click', functio
 
     if (String(pinNumber) === '0903') {
         availableBalance = availableBalance + amountAdd;
-        alert('Transaction successful! Added the amount ' + amountAdd);
+        alert('Transaction successful! Deposited the amount ' + amountAdd);
     } else {
         alert('Pin invalid. Transaction unsuccessful!');
     }
