@@ -6,7 +6,7 @@ document.getElementById('btn-login').addEventListener('click', function(event) {
     const pinNumber = getInputFieldValueById('login-pin');
 
     // Temporary validating function: not recommended for professional use
-    if (String(phoneNumber) === '01634396186' && String(pinNumber) === '0903') {
+    if (String(phoneNumber) === '123456789' && String(pinNumber) === '1234') {
         this.onclick = window.location.replace('../home.html');
         // window.location.href can be used too.
     } else {

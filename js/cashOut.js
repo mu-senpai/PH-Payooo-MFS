@@ -7,7 +7,7 @@ document.getElementById('btn-trans-cash-out').addEventListener('click', function
     console.log(availableBalance);
     const pinNumber = getInputFieldValueById('trans-out-pin');
 
-    if (String(pinNumber) === '0903') {
+    if (String(pinNumber) === '1234') {
         availableBalance = availableBalance - amountDeduct;
         alert('Transaction successful! Withdrawed the amount ' + amountDeduct);
     } else {
