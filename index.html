@@ -9,6 +9,19 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+
     <title>Payooo MFS</title>
 </head>
 <body>
@@ -20,7 +33,7 @@
             <div class="camera"></div>
             <div class="display">
                 <!-- Main content -->
-                <div class="artboard artboard-demo phone-1 overflow-auto">
+                <div class="artboard artboard-demo phone-1 overflow-auto no-scrollbar">
                     <!-- Logo -->
                     <div class="w-16 h-16 inline-flex justify-center mb-4">
                         <img class="w-full h-full" src="assets/payoo.png" alt="">
